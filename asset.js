@@ -1,4 +1,4 @@
-//Create the Asset Module
+// Task 1: Create the Asset Module
 
 export const assets = [ // array of stocks
     {id: 1, name: 'Apple', type: 'stock', price: 230, quantity: 20},
