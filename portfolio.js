@@ -2,10 +2,8 @@
 
 import { assets } from "./asset";
 
-export function calculatePortfolioValue(assets) { //sums the total value of the portfolio
-    return assets.reduce ((total, asset) => {
-        return total + (asset.price * asset.quantity);
-    },0 );
+export function calculatePortfolioValue() { // sums the total value of the portfolio
+    return assets.reduce((total, asset) => total + asset.price * asset.quantity, 0);
 }
 
 export function getPortfolioAllocation() { //calculates the percentage allocation of each asset
