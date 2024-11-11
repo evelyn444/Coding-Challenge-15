@@ -1,6 +1,6 @@
 //Task 2: Create the Portfolio Module
 
-import { assets } from "./asset";
+import { assets } from "./asset.js";
 
 export function calculatePortfolioValue() { // sums the total value of the portfolio
     return assets.reduce((total, asset) => total + asset.price * asset.quantity, 0);
